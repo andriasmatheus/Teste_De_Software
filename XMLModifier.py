@@ -1,6 +1,5 @@
 import xml.etree.ElementTree as ET
 
-
 class XMLModifier:
     def __init__(self, arquivo_xml):
         """Inicializa o parser e carrega o XML"""
@@ -43,6 +42,29 @@ class XMLModifier:
                 source_ref_elem.text = source_ref
             if ano_ref_elem is not None:
                 ano_ref_elem.text = ano_ref
+
+    def set_id_artigo(self, novo_doi):
+        """Atualiza o DOI do artigo"""
+        self.root.find(".//article-id[@pub-id-type='doi']").text = novo_doi
+
+    def set_issn(self, novo_issn):
+        """Atualiza o ISSN do artigo"""
+        self.root.find(".//issn").text = novo_issn
+
+    def set_data_publicacao(self, ano, mes, dia):
+        """Atualiza a data de publicação do artigo"""
+        data_pub = self.root.find(".//pub-date[@pub-type='epub']")
+        data_pub.find("year").text = str(ano)
+        data_pub.find("month").text = str(mes)
+        data_pub.find("day").text = str(dia)
+
+    def set_journal_id(self, novo_journal_id):
+        """Atualiza o ID da revista"""
+        self.root.find(".//journal-id[@journal-id-type='publisher']").text = novo_journal_id
+
+    def set_journal_title(self, novo_journal_title):
+        """Atualiza o título da revista"""
+        self.root.find(".//journal-title").text = novo_journal_title
 
     def save(self, novo_arquivo_xml):
         """Salva as modificações em um novo arquivo XML"""
