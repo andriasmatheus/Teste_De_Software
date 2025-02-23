@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink"
+         article-type="research-article"
+         lang="pt">
+    
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher">Revista de Tecnologia e Ciência</journal-id>
+            <journal-title-group>
+                <journal-title>Revista de Tecnologia e Ciência</journal-title>
+            </journal-title-group>
+            <issn pub-type="epub">1234-5678</issn>
+        </journal-meta>
+
+        <article-meta>
+            <article-id pub-id-type="doi">10.1234/rtic.2024.001</article-id>
+            <article-categories>
+                <subj-group subj-group-type="heading">
+                    <subject>Engenharia de Software</subject>
+                </subj-group>
+            </article-categories>
+
+            <title-group>
+                <article-title>Uma Abordagem para Testes de Software Baseados em Inteligência Artificial</article-title>
+            </title-group>
+
+            <contrib-group>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Silva</surname>
+                        <given-names>João</given-names>
+                    </name>
+                    <aff>
+                        <institution>Universidade de Tecnologia</institution>
+                        <country>Brasil</country>
+                    </aff>
+                    <email>joao.silva@example.com</email>
+                </contrib>
+
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Oliveira</surname>
+                        <given-names>Maria</given-names>
+                    </name>
+                    <aff>
+                        <institution>Instituto de Pesquisa em Computação</institution>
+                        <country>Portugal</country>
+                    </aff>
+                    <email>maria.oliveira@example.com</email>
+                </contrib>
+            </contrib-group>
+
+            <pub-date pub-type="epub">
+                <year>2024</year>
+                <month>02</month>
+                <day>15</day>
+            </pub-date>
+
+            <abstract>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut varius velit, ut ullamcorper odio. Nam tincidunt, quam at dignissim pharetra, sapien velit cursus diam, a pulvinar tortor ex et erat. Suspendisse interdum condimentum mi, ac ullamcorper justo vulputate id. Aliquam aliquam pretium rutrum. Integer ut arcu vitae felis interdum placerat. Pellentesque scelerisque rutrum ex, et lacinia sem semper eget. Vivamus faucibus eu sem eget sagittis. Vestibulum feugiat luctus orci at bibendum. Morbi tempus sit amet ante id bibendum. Nulla ut congue nisl. Sed non purus faucibus, ornare felis nec, congue nunc. Pellentesque nec tellus sed enim fringilla ultrices. Nulla porta arcu quis justo imperdiet ornare. Cras placerat libero quis purus varius, sit amet interdum arcu tempus. Pellentesque eu suscipit neque, eget hendrerit orci. Sed nunc lorem, hendrerit sed sollicitudin sed, egestas non libero.
+
+Donec tincidunt aliquam mauris sit amet feugiat. Sed ante lorem, fringilla at tellus eget, rhoncus ullamcorper tortor. Sed aliquet metus sed odio dignissim, ac iaculis nulla congue. Praesent fermentum purus nec quam ornare vehicula. Praesent libero purus, fermentum sed laoreet eget, blandit ac neque. Cras faucibus sem quis porttitor porta. Quisque consectetur lectus vel dui imperdiet, sed iaculis augue suscipit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur a mi vel augue elementum iaculis non quis mauris. Sed blandit neque in eleifend rhoncus. In hac habitasse platea dictumst. Nulla et malesuada dui. Nullam rhoncus dignissim dui, a laoreet ipsum vulputate sit amet. Cras sit amet nisi sed orci consequat accumsan. Sed tempor neque odio. Donec a nunc eros.
+
+Sed convallis laoreet velit. Phasellus non nisl sed mauris elementum vulputate. Nam sed velit ac justo efficitur fringilla et a mauris. Phasellus vel imperdiet est, vel bibendum nisl. Nullam at suscipit nibh. Duis viverra massa felis. Curabitur viverra volutpat lorem eu fermentum. Etiam molestie felis nibh, mollis tempus risus consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a ullamcorper lorem. Nunc pharetra ornare facilisis. Duis at massa ut quam pretium pharetra at a leo. Donec pharetra metus ante, non elementum elit venenatis non. Nunc eleifend augue vel sagittis tempus. Nunc faucibus ex sed elit commodo gravida. Phasellus eu mauris vehicula purus facilisis gravida.
+
+Donec sit amet tincidunt neque. Morbi elit sem, sodales in erat in, ultricies tincidunt tortor. Mauris nec tempor quam. Donec molestie tellus a malesuada interdum. Nulla facilisis, ex et congue imperdiet, sapien neque efficitur turpis, eu lacinia nibh augue a lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras mollis, lectus luctus varius consequat, justo lectus venenatis magna, quis convallis augue libero non enim. Sed eu elementum ex. Nullam elementum justo sodales enim blandit, ac viverra lectus scelerisque. In quis ex iaculis, elementum quam eget, blandit enim. Aliquam non libero at neque ullamcorper consequat elementum vitae purus. Sed ac fringilla enim.
+
+Morbi vel metus tincidunt, convallis dui vitae, hendrerit quam. Nam sodales aliquet lacinia. Quisque egestas facilisis justo vitae vulputate. Ut facilisis nibh sit amet dolor venenatis dignissim. Integer auctor diam est, sed vulputate mauris ultricies vel. Sed massa enim, luctus non facilisis et, commodo sed libero. Pellentesque eu nisi vitae nulla lobortis sollicitudin mattis ut leo. In ante mauris, placerat id accumsan et, placerat in massa. Donec in risus orci. Nam at congue mauris. Donec sapien risus, placerat in justo id, mattis ornare leo.</p>
+            </abstract>
+        </article-meta>
+    </front>
+
+    <body>
+        <sec sec-type="intro">
+            <title>Introdução</title>
+            <p>Os testes de software são essenciais para garantir a qualidade dos sistemas modernos. Com o aumento da complexidade dos sistemas, métodos tradicionais de teste tornam-se ineficientes.</p>
+        </sec>
+
+        <sec sec-type="methods">
+            <title>Metodologia</title>
+            <p>Nossa metodologia propõe um modelo baseado em aprendizado de máquina para identificar falhas de software automaticamente.</p>
+        </sec>
+
+        <sec sec-type="results">
+            <title>Resultados</title>
+            <p>Os testes realizados mostraram uma redução de 30% no tempo de execução e um aumento de 25% na detecção de falhas em comparação com abordagens tradicionais.</p>
+        </sec>
+
+        <sec sec-type="conclusion">
+            <title>Conclusão</title>
+            <p>Os resultados indicam que o uso de inteligência artificial em testes de software pode trazer benefícios significativos para a indústria.</p>
+        </sec>
+    </body>
+
+    <back>
+        <ref-list>
+            <title>Referências</title>
+            <ref id="ref1">
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Smith</surname>
+                            <given-names>J.</given-names>
+                        </name>
+                    </person-group>
+                    <article-title>Machine Learning in Software Testing</article-title>
+                    <source>Journal of Software Engineering</source>
+                    <year>2022</year>
+                    <volume>29</volume>
+                    <fpage>101</fpage>
+                    <lpage>115</lpage>
+                </element-citation>
+            </ref>
+
+            <ref id="ref2">
+                <element-citation publication-type="book">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Brown</surname>
+                            <given-names>K.</given-names>
+                        </name>
+                    </person-group>
+                    <source>Artificial Intelligence in Testing</source>
+                    <publisher-name>Springer</publisher-name>
+                    <year>2021</year>
+                </element-citation>
+            </ref>
+        </ref-list>
+    </back>
+</article>
+

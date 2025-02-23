@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink"
+         article-type="research-article"
+         lang="pt">
+    
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher">Revista de Tecnologia e Ciência</journal-id>
+            <journal-title-group>
+                <journal-title>Revista de Tecnologia e Ciência</journal-title>
+            </journal-title-group>
+            <issn pub-type="epub">1234-5678</issn>
+        </journal-meta>
+
+        <article-meta>
+            <article-id pub-id-type="doi">10.1234/rtic.2024.001</article-id>
+            <article-categories>
+                <subj-group subj-group-type="heading">
+                    <subject>Engenharia de Software</subject>
+                </subj-group>
+            </article-categories>
+
+            <title-group>
+                <article-title>Uma Abordagem para Testes de Software Baseados em Inteligência Artificial</article-title>
+            </title-group>
+
+            <contrib-group>
+            </contrib-group>
+
+            <pub-date pub-type="epub">
+                <year>2024</year>
+                <month>02</month>
+                <day>15</day>
+            </pub-date>
+
+            <abstract>
+                <p>Este artigo apresenta uma abordagem inovadora para testes de software utilizando algoritmos de inteligência artificial. A metodologia proposta visa reduzir o tempo de execução dos testes e aumentar a cobertura dos cenários testados.</p>
+            </abstract>
+        </article-meta>
+    </front>
+
+    <body>
+        <sec sec-type="intro">
+            <title>Introdução</title>
+            <p>Os testes de software são essenciais para garantir a qualidade dos sistemas modernos. Com o aumento da complexidade dos sistemas, métodos tradicionais de teste tornam-se ineficientes.</p>
+        </sec>
+
+        <sec sec-type="methods">
+            <title>Metodologia</title>
+            <p>Nossa metodologia propõe um modelo baseado em aprendizado de máquina para identificar falhas de software automaticamente.</p>
+        </sec>
+
+        <sec sec-type="results">
+            <title>Resultados</title>
+            <p>Os testes realizados mostraram uma redução de 30% no tempo de execução e um aumento de 25% na detecção de falhas em comparação com abordagens tradicionais.</p>
+        </sec>
+
+        <sec sec-type="conclusion">
+            <title>Conclusão</title>
+            <p>Os resultados indicam que o uso de inteligência artificial em testes de software pode trazer benefícios significativos para a indústria.</p>
+        </sec>
+    </body>
+
+    <back>
+        <ref-list>
+            <title>Referências</title>
+            <ref id="ref1">
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Smith</surname>
+                            <given-names>J.</given-names>
+                        </name>
+                    </person-group>
+                    <article-title>Machine Learning in Software Testing</article-title>
+                    <source>Journal of Software Engineering</source>
+                    <year>2022</year>
+                    <volume>29</volume>
+                    <fpage>101</fpage>
+                    <lpage>115</lpage>
+                </element-citation>
+            </ref>
+
+            <ref id="ref2">
+                <element-citation publication-type="book">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Brown</surname>
+                            <given-names>K.</given-names>
+                        </name>
+                    </person-group>
+                    <source>Artificial Intelligence in Testing</source>
+                    <publisher-name>Springer</publisher-name>
+                    <year>2021</year>
+                </element-citation>
+            </ref>
+        </ref-list>
+    </back>
+</article>
+

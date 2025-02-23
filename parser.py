@@ -116,12 +116,12 @@ def gerar_pdf(arquivo_pdf, dados):
     c.save()
 
 # Executar a conversão
-arquivo_xml = "artigo.xml"
-arquivo_pdf = "artigo_formatado.pdf"
+# arquivo_xml = "artigo.xml"
+# arquivo_pdf = "artigo_formatado.pdf"
 
-parser = Parser(arquivo_xml)
-dados = parser.get_dados_completos()
-gerar_pdf(arquivo_pdf, dados)
+# parser = Parser(arquivo_xml)
+# dados = parser.get_dados_completos()
+# gerar_pdf(arquivo_pdf, dados)
 
-print(f"PDF '{arquivo_pdf}' gerado com sucesso!")
+# print(f"PDF '{arquivo_pdf}' gerado com sucesso!")
 
