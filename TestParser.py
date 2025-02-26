@@ -52,6 +52,27 @@ class TestParser(unittest.TestCase):
         autores = parser.get_autores()
         self.assertEqual(autores.__class__, list)
 
+    def test_UT_09(self):
+        # Testar referências incompletas (sem ano ou titulo
+        parser09 = Parser("ut_09.xml")
+        self.assertEqual(parser09.get_referencias(), ['Título desconhecido, Fonte desconhecida, Ano desconhecido', 'Título desconhecido, Artificial Intelligence in Testing, 2021'])
+
+    def test_UT_10(self):
+        # testar título longo
+        parser10 = Parser("ut_10.xml")
+        self.assertEqual(parser10.get_titulo(), "EsteÉUmTítuloExtremamenteLongoProjetadoEspecificamenteParaTestarOsLimitesDeUmParserXMLQuePodeTerRestriçõesDeTamanhoOuErrosDeManipulaçãoDeStringsExcessivamenteGrandesDentroDeElementosOuAtributosNoArquivoXML")
+
+    def test_UT_11(self):
+        # testar resumo e seções vazias
+        parser11 = Parser("ut_11.xml")
+        self.assertEqual(parser11.get_resumo(), None)
+        self.assertEqual(parser11.get_secoes(), [(None,[None])])
+        
+    def test_UT_12(self):
+        # testar resumo longo
+        parser12 = Parser("ut_12.xml")
+        self.assertEqual(parser12.get_resumo(), 'Este documento tem como objetivo principal testar os limites de um parser XML ao lidar com elementos e atributos que contêm textos excepcionalmente longos. Muitas implementações de parsers XML possuem restrições internas, sejam elas baseadas no tamanho máximo permitido para um nó, na memória disponível para processar o documento ou em regras específicas de formatação e estruturação. Dessa forma, ao utilizar um título excessivamente longo e um resumo extenso, buscamos identificar possíveis falhas, como truncamento inesperado, erros de alocação de memória ou falhas de processamento que podem comprometer a integridade dos dados manipulados. Além disso, este teste pode revelar eventuais dificuldades no carregamento e interpretação do XML por diferentes bibliotecas e linguagens de programação, possibilitando ajustes e otimizações no código responsável por sua leitura e escrita. É importante considerar que parsers robustos devem ser capazes de processar conteúdos grandes sem comprometer a performance ou causar falhas inesperadas, garantindo a confiabilidade do sistema que depende dessa estrutura de dados. Portanto, ao executar esse teste, podemos avaliar não apenas a capacidade do parser em processar grandes volumes de texto, mas também sua resiliência e conformidade com os padrões estabelecidos para XML, identificando assim a necessidade de ajustes para evitar problemas futuros.')
+
     def test_IT_01(self):
         """Testa extração e formatação completa do artigo"""
         parser = Parser("artigo.xml")
@@ -167,6 +188,57 @@ class TestParser(unittest.TestCase):
             success = e.args
             
         self.assertEqual(success, True)
+
+    def test_IT_09(self):
+        #testar integração com multiplos autores
+        parser = Parser("artigo_multi_autor.xml")
+
+        success = True
+        try:
+            dados = parser.get_dados_completos()
+            gerar_pdf(test_pdf_path, dados)
+        except Exception as e:
+            success = e.args
+        # PDF gerado todos os autores corretamente
+        self.assertEqual(success,True)
+
+    def test_IT_10(self):
+        # XML sem seções
+        parser = Parser("artigo_sem_secao.xml")
+        success = True
+        try:
+            dados = parser.get_dados_completos()
+            gerar_pdf(test_pdf_path, dados)
+        except Exception as e:
+            success = e.args
+        # PDF gerado sem seções
+        self.assertEqual(success,True)
+    
+    def test_IT_11(self):
+        # XML sem ref
+        parser = Parser("artigo_sem_referencias.xml")
+        success = True
+        try:
+            dados = parser.get_dados_completos()
+            gerar_pdf(test_pdf_path, dados)
+        except Exception as e:
+            success = e.args
+        # PDF gerado sem ref
+        self.assertEqual(success,True)
+
+    def test_IT_12(self):
+        # Testar fluxo completo com diversas variações do XML
+        success = True
+        xmls = ["artigo_sem_secao.xml","artigo_multi_autor.xml","artigo_resumo_longo.xml"]
+        try:
+            for xml in xmls:
+                parser = Parser(xml)
+                dados = parser.get_dados_completos()
+                gerar_pdf(test_pdf_path, dados)
+        except Exception as e:
+            success = e.args
+        self.assertEqual(success, True)
+            
     
     def test_MT_01(self):
         parser = Parser("artigo.xml")
@@ -221,6 +293,32 @@ class TestParser(unittest.TestCase):
             success = e.args
             
         self.assertEqual(success, True)  
+
+    def test_MT_05(self):
+        parser = Parser("artigo_sem_autores.xml")
+        
+        success = True
+        try:
+            dados = parser.get_dados_completos()
+            gerar_pdf(test_pdf_path, dados)
+        except Exception as e:
+            success = e.args
+            
+        self.assertEqual(success, True)
+    
+    def test_MT_06(self):
+        # Testar integração com múltiplos arquivos
+        success = True
+        xmls = ["artigo_sem_secao.xml","artigo_multi_autor.xml","artigo_resumo_longo.xml"]
+        try:
+            for xml in xmls:
+                parser = Parser(xml)
+                dados = parser.get_dados_completos()
+                gerar_pdf(test_pdf_path, dados)
+        except Exception as e:
+            success = e.args
+        self.assertEqual(success, True)
+
 
 if __name__ == "__main__":
     unittest.main()
